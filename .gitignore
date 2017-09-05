@@ -1,6 +1,7 @@
 *.sh
 AIK/
 arm-eabi-4.8/
+output/
 
 # Built application files
 *.apk
