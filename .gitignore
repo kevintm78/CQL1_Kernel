@@ -2,6 +2,7 @@
 AIK/
 arm-eabi-4.8/
 output/
+boot.img
 
 # Built application files
 *.apk
