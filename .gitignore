@@ -1,6 +1,7 @@
 *.sh
 AIK/
 arm-eabi-4.8/
+arm-eabi-5.3/
 output/
 boot.img
 
