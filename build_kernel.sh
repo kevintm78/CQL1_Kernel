@@ -12,6 +12,7 @@
 
 rm AnyKernel2/dtb
 rm AnyKernel2/zImage
+rm AnyKernel2/modules/system/lib/modules/*.ko
 rm -rf output/
 make clean && make mrproper
 
