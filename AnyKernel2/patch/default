@@ -1,0 +1,7 @@
+# Kernel Tweaks
+
+persist.service.adb.enable=1
+wlan.wfd.hdcp=disable
+ro.securestorage.support=false
+ro.config.knox=0
+ro.config.tima=0
