@@ -33,6 +33,10 @@
 #include "mdss_samsung_dsi_panel_common.h"
 #include "mdss_fb.h"
 
+#ifdef CONFIG_TOUCHSCREEN_DOUBLETAP2WAKE
+#include <linux/input/doubletap2wake.h>
+#endif
+
 #if defined(CONFIG_MDNIE_LITE_TUNING)
 #include "mdnie_lite_tuning.h"
 #endif
@@ -568,6 +572,7 @@ void mdss_dsi_samsung_panel_reset(struct mdss_panel_data *pdata, int enable)
 		wmb();
 
 	} else {
+		if (!dt2w_suspended)
 		gpio_set_value((ctrl_pdata->rst_gpio), 0);
 
 	}
